@@ -17,7 +17,7 @@ export const personalInfo = {
     "BI Enthusiast",
   ],
   college: "Dawood University of Engineering and Technology",
-  collegeUrl: "Not available",
+  collegeUrl: "https://duet.edu.pk",
   avatarUrl: "/assets/ME.jpg",
   status: "Open to opportunities",
   aboutText: "Aspiring Data Analyst turning raw data into clear, actionable insight through Python, SQL, Power BI, and Excel.",
@@ -133,7 +133,7 @@ export const projectData = [
     name: "Netflix Data Intelligence Dashboard",
     description: "A Power BI dashboard reimagined as a Netflix-style streaming app interface, analyzing 9,000+ titles with dynamic profile exploration and advanced Power Query data modeling.",
     tech: ["Power BI", "Power Query", "DAX"],
-    live: "https://lnkd.in/dapSUkjM",
+    live: "https://app.powerbi.com/view?r=eyJrIjoiOWUxNDVmZjktMmEwMi00YzBlLTlkNzgtNmRhNTM2OWI4NDhhIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9&pageName=959be2b96b335226c373",
     github: null,
     category: "BI",
     images: [

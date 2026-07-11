@@ -55,7 +55,7 @@ const About = () => {
                   href={personalInfo.collegeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-blue-500 underline decoration-blue-500/30 transition-colors"
+                  className="font-bold text-white hover:text-blue-500 transition-all duration-300 underline decoration-white/20 hover:decoration-blue-500/50 underline-offset-4"
                 >
                   {personalInfo.college}
                 </a>
