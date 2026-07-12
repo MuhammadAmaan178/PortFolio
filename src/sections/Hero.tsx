@@ -70,9 +70,9 @@ const Hero = ({ onTabChange, uiType }: HeroProps) => {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
-          className="flex flex-col sm:flex-row items-center gap-4 pt-4"
+          className="flex flex-col sm:flex-row items-center gap-4 pt-4 w-full"
         >
-          <div className="flex items-center gap-4 w-full sm:w-auto">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
             <a
               href="#projects"
               onClick={(e) => {
@@ -84,7 +84,7 @@ const Hero = ({ onTabChange, uiType }: HeroProps) => {
                   document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
                 }
               }}
-              className="flex-1 sm:flex-none px-6 py-3.5 rounded-full bg-white text-black font-black text-base hover:bg-zinc-100 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 group shadow-xl shadow-white/10"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white text-black font-black text-base hover:bg-zinc-100 active:scale-95 transition-all duration-300 flex items-center justify-center gap-2 group shadow-xl shadow-white/10"
             >
               Selected Works
             </a>
@@ -100,7 +100,7 @@ const Hero = ({ onTabChange, uiType }: HeroProps) => {
                   document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
                 }
               }}
-              className="flex-1 sm:flex-none px-6 py-3.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-black text-base transition-all duration-300 flex items-center justify-center gap-2 group shadow-xl shadow-blue-500/20"
+              className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-black text-base transition-all duration-300 flex items-center justify-center gap-2 group shadow-xl shadow-blue-500/20"
             >
               Get in Touch
               <Send className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" size={18} />

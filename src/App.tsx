@@ -50,7 +50,7 @@ const App = () => {
   };
 
   return (
-    <div className="w-full min-h-screen bg-[#050505] text-white relative">
+    <div className="w-full min-h-screen bg-[#050505] text-white relative overflow-x-hidden">
       <GlobalBackground />
       <Navbar
         terminalMode={terminalMode}

@@ -218,7 +218,7 @@ const Projects = ({ limit }: { limit?: number }) => {
                   </div>
                   <button
                     onClick={() => setSelectedProject(null)}
-                    className="p-1.5 rounded-full border border-white/10 hover:bg-white/5 text-zinc-400 hover:text-white transition-colors"
+                    className="p-3 rounded-full border border-white/10 hover:bg-white/5 text-zinc-400 hover:text-white transition-colors"
                     title="Close Modal"
                   >
                     <X size={20} />
@@ -243,13 +243,13 @@ const Projects = ({ limit }: { limit?: number }) => {
                         {/* Navigation Overlays */}
                         <button
                           onClick={handlePrevImage}
-                          className="absolute left-4 p-2 rounded-full border border-white/10 bg-black/60 hover:bg-white/15 text-white transition-all opacity-0 group-hover:opacity-100 z-20"
+                          className="absolute left-4 p-3 rounded-full border border-white/10 bg-black/60 hover:bg-white/15 text-white transition-all opacity-100 md:opacity-0 group-hover:opacity-100 z-20"
                         >
                           <ChevronLeft size={20} />
                         </button>
                         <button
                           onClick={handleNextImage}
-                          className="absolute right-4 p-2 rounded-full border border-white/10 bg-black/60 hover:bg-white/15 text-white transition-all opacity-0 group-hover:opacity-100 z-20"
+                          className="absolute right-4 p-3 rounded-full border border-white/10 bg-black/60 hover:bg-white/15 text-white transition-all opacity-100 md:opacity-0 group-hover:opacity-100 z-20"
                         >
                           <ChevronRight size={20} />
                         </button>
@@ -370,7 +370,8 @@ const Projects = ({ limit }: { limit?: number }) => {
                 <img
                   src={selectedProject.images[activeImageIndex]}
                   alt={`${selectedProject.name} zoom`}
-                  className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
+                  onClick={() => setIsLightboxOpen(false)}
+                  className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl cursor-zoom-out"
                 />
               </motion.div>
 
@@ -392,7 +393,7 @@ const Projects = ({ limit }: { limit?: number }) => {
 
               <button
                 onClick={() => setIsLightboxOpen(false)}
-                className="absolute top-4 right-4 p-2.5 rounded-full border border-white/10 bg-black/40 hover:bg-white/10 text-white transition-all z-20"
+                className="absolute top-4 right-4 p-3 rounded-full border border-white/10 bg-black/40 hover:bg-white/10 text-white transition-all z-20"
                 title="Close Zoom"
               >
                 <X size={22} />

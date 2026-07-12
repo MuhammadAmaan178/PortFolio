@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import clsx from "clsx";
+import { X } from "lucide-react";
 import { getCommandData } from "./CommandData";
 import { isGlowCommand, isValidCommand } from "./data/commands";
 import { terminalThemes } from "./data/themes";
@@ -142,11 +143,22 @@ const TerminalMode = ({ setTerminalMode }: Props) => {
     <div
       onClick={handleContainerClick}
       className={clsx(
-        "relative h-dvh flex flex-col px-2 py-20 md:py-20 md:px-12 font-mono overflow-hidden transition-colors duration-500",
+        "relative h-dvh flex flex-col px-4 py-20 md:py-20 md:px-12 font-mono overflow-hidden transition-colors duration-500",
         currentTheme.bg,
         currentTheme.text
       )}
     >
+      {/* Exit Terminal Button for Mobile / Usability */}
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          setTerminalMode(false);
+        }}
+        className="absolute top-4 right-4 z-20 px-4 py-3 rounded-xl border border-red-500/30 bg-red-500/10 hover:bg-red-500/20 text-red-400 font-bold text-xs uppercase tracking-wider flex items-center gap-1.5 transition-all active:scale-95 shadow-lg cursor-pointer"
+        title="Exit Terminal"
+      >
+        <X size={14} /> Exit
+      </button>
       {glow && (
         <div className="absolute inset-0 z-0 pointer-events-none">
           <div className="absolute -inset-20 bg-green-400 opacity-10 blur-3xl rounded-full" />
@@ -175,9 +187,9 @@ const TerminalMode = ({ setTerminalMode }: Props) => {
             e.preventDefault();
             handleCommand(input);
           }}
-          className="flex items-center mb-4"
+          className="flex flex-col sm:flex-row items-stretch sm:items-center mb-4 gap-1 sm:gap-0"
         >
-          <span className="pr-2 text-green-300">amaan@dataanalyst:~$</span>
+          <span className="text-green-300 select-none">amaan@dataanalyst:~$</span>
           <div className="relative flex-1 min-h-[1.5rem]">
             {/* Visual block cursor and text */}
             <div className="absolute inset-0 pointer-events-none flex items-center whitespace-pre">

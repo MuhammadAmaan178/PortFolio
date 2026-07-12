@@ -75,7 +75,7 @@ const BottomNavBar = ({ forcedTab, setForcedTab }: Props) => {
                     scrollToSection(item.id);
                   }
                 }}
-                className={`relative flex items-center justify-center p-3 sm:p-4 rounded-2xl transition-all duration-300 group ${isActive
+                className={`relative flex items-center justify-center p-2.5 sm:p-4 rounded-2xl transition-all duration-300 group ${isActive
                   ? "text-blue-500 bg-white/10"
                   : "text-zinc-500 hover:text-zinc-300 hover:bg-white/5"
                   }`}

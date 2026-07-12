@@ -48,10 +48,10 @@ const Contact = () => {
             </p>
 
             {/* CTA BUTTONS */}
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 w-full sm:w-auto">
               <a
                 href="mailto:mohammadamaanc178@gmail.com"
-                className="px-6 py-3.5 rounded-full bg-white text-black font-black text-base transition-all duration-300 hover:bg-zinc-200 hover:-translate-y-1 flex items-center gap-2 group"
+                className="w-full sm:w-auto px-6 py-3.5 rounded-full bg-white text-black font-black text-base transition-all duration-300 hover:bg-zinc-200 hover:-translate-y-1 flex items-center justify-center gap-2 group"
               >
                 Start a Conversation
               </a>
@@ -59,7 +59,7 @@ const Contact = () => {
                 href="/resume/Muhammad_Amaan_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3.5 text-white border border-white/10 rounded-full font-black text-base hover:bg-white/5 hover:-translate-y-1 transition-all duration-300"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 text-white border border-white/10 rounded-full font-black text-base hover:bg-white/5 hover:-translate-y-1 transition-all duration-300"
                 download
               >
                 Resume <ArrowUpRight size={18} />
