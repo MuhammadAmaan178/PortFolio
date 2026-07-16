@@ -297,6 +297,28 @@ const Projects = ({ limit }: { limit?: number }) => {
                       </p>
                     </div>
 
+                    {selectedProject.approach && (
+                      <div className="space-y-2">
+                        <h4 className="text-xs font-black text-zinc-500 uppercase tracking-widest">
+                          Approach
+                        </h4>
+                        <p className="text-zinc-300 leading-relaxed text-sm md:text-base">
+                          {selectedProject.approach}
+                        </p>
+                      </div>
+                    )}
+
+                    {selectedProject.highlights && (
+                      <div className="space-y-2">
+                        <h4 className="text-xs font-black text-zinc-500 uppercase tracking-widest">
+                          Highlights
+                        </h4>
+                        <p className="text-zinc-300 leading-relaxed text-sm md:text-base">
+                          {selectedProject.highlights}
+                        </p>
+                      </div>
+                    )}
+
                     <div className="space-y-2">
                       <h4 className="text-xs font-black text-zinc-500 uppercase tracking-widest">
                         Tech Stack

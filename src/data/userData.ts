@@ -49,6 +49,8 @@ export const skills = [
     items: [
       { name: "Python", icon: "https://cdn.simpleicons.org/python" },
       { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql" },
+      { name: "SQL Server", icon: "/assets/sqlserver.svg" },
+      { name: "Oracle", icon: "/assets/oracle.svg" },
     ],
   },
   {
@@ -65,7 +67,6 @@ export const skills = [
     items: [
       { name: "Jupyter Notebook", icon: "https://cdn.simpleicons.org/jupyter" },
       { name: "Google Colab", icon: "https://cdn.simpleicons.org/googlecolab" },
-      { name: "Git", icon: "https://cdn.simpleicons.org/git" },
       { name: "GitHub", icon: "https://cdn.simpleicons.org/github", invertDark: true },
       { name: "Kaggle", icon: "https://cdn.simpleicons.org/kaggle" },
     ],
@@ -169,6 +170,25 @@ export const projectData = [
       "/assets/projects/excel-dashboard-2.jpg",
       "/assets/projects/excel-dashboard-3.jpg"
     ]
+  },
+  {
+    name: "Adventure Works Interactive Portal",
+    description: "An end-to-end BI portal with dynamic, click-to-filter navigation — from database restoration to a fully interactive Power BI reporting experience.",
+    tech: ["Power BI", "SQL Server", "Power Query", "DAX"],
+    live: "https://app.powerbi.com/view?r=eyJrIjoiNmYwNTU2MDQtZjZmMC00MjBmLWI1N2ItYWExM2U0OGM3NzEyIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9&pageName=398a043021f1b355409b",
+    github: null,
+    category: "BI",
+    images: [
+      "/assets/projects/adventureworks-cover.png",
+      "/assets/projects/adventureworks-1.png",
+      "/assets/projects/adventureworks-2.png",
+      "/assets/projects/adventureworks-3.png",
+      "/assets/projects/adventureworks-4.png",
+      "/assets/projects/adventureworks-5.png",
+      "/assets/projects/adventureworks-6.png"
+    ],
+    approach: "Restored the Microsoft AdventureWorks database from a .bak backup file in Microsoft SQL Server, performed deep relational lookups, and built extensive data cleaning and transformation pipelines using Power Query. Designed a custom-themed landing page where clicking a market flag (Australia, Canada, France, Germany, UK, US) or a product category (Bikes, Clothing, Accessories) dynamically filters and routes the entire report. Built synchronized analytical pages covering Business Overview, Product Analytics, Customer Insights with granular demographic trends, and a high-volume Sales Ledger — all tied together with optimized DAX measures, a unified search bar, and custom bookmark states powering a one-click 'Clear All Filters' reset.",
+    highlights: "Full pipeline from raw SQL Server database to a polished, dynamically-routed reporting portal — combining database management, relational data modeling, and custom Power BI UI/UX design."
   }
 ];
 
